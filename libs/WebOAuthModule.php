@@ -55,7 +55,7 @@ class WebOAuthModule extends IPSModule
 
     private function RegisterOAuth($WebOAuth): void
     {
-        $ids = IPS_GetInstanceListByModuleID('{F99BF07D-CECA-438B-A497-E4B55F139D37}');
+        $ids = IPS_GetInstanceListByModuleID('{18d379bc-b802-4f38-8380-ef195bd1ce81}');
         if (count($ids) > 0) {
             $clientIDs = json_decode(IPS_GetProperty($ids[0], 'ClientIDs'), true);
             $found = false;
