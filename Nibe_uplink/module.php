@@ -46,7 +46,7 @@
 		*/
 		public function Register() {
 
-			$cc_id = IPS_GetInstanceListByModuleID("{9486D575-BE8C-4ED8-B5B5-20930E26DE6F}")[0];
+			$cc_id = IPS_GetInstanceListByModuleID("{18d379bc-b802-4f38-8380-ef195bd1ce81}")[0];
 
 			//Return everything which will open the browser
 			return CC_GetConnectURL($cc_id)."/hook/oauth/Nibe_uplink";
