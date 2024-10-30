@@ -56,7 +56,7 @@ class WebHookModule extends IPSModule
 
     private function RegisterHook($WebHook)
     {
-        $ids = IPS_GetInstanceListByModuleID('{015A6EB8-D6E5-4B93-B496-0D3F77AE9FE1}');
+        $ids = IPS_GetInstanceListByModuleID('{18d379bc-b802-4f38-8380-ef195bd1ce81}');
         if (count($ids) > 0) {
             $hooks = json_decode(IPS_GetProperty($ids[0], 'Hooks'), true);
             $found = false;
